@@ -36,7 +36,7 @@ module.exports = {
     ],
     LoginValidator: [
         body("username").isLength(options.username).withMessage("username hoac password sai"),
-        body("password").isStrongPassword(option.password).withMessage("username hoac password sai")
+        body("password").isStrongPassword(options.password).withMessage("username hoac password sai")
     ],
     ChangePasswordValidator: [
         body("oldpassword").notEmpty().withMessage("Old password is required"),

@@ -7,7 +7,7 @@ let constants = require('../utils/constants')
 let { check_authentication } = require('../utils/check_auth')
 let crypto = require('crypto')
 let mailer = require('../utils/mailer')
-let {SignUpValidator,LoginValidator,validate} = require('../utils/validator')
+let {SignUpValidator,LoginValidator,ChangePasswordValidator,ForgotPasswordValidator,ResetPasswordValidator,validate} = require('../utils/validator')
 
 
 router.post('/signup',SignUpValidator,validate, async function (req, res, next) {
